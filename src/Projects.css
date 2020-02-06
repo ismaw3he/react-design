@@ -1,0 +1,39 @@
+.projects-page-container{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.images-college{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 97px;
+}
+.images-college > a{
+    width: calc(100% / 4);
+}
+.image-single{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.eye{
+    display: none;
+}
+.image-single:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    bottom: 0;
+    transition: height 0.5s ease-out;
+    background: linear-gradient(to bottom, transparent 0%, rgba(33, 191, 185, 1) 100%);
+}
+.image-single:hover:before {
+    height: 100%;
+}
+.image-single:hover .eye{
+    display: inline-block;
+}

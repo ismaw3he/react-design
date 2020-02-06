@@ -1,0 +1,272 @@
+.extra-space{
+    min-height: 80vh;
+}
+
+.header-content {
+    width: 480px;
+    margin-top: 40px;
+    margin-right: 125px;
+}
+
+.section-header {
+    font-weight: bold;
+    font-size: 38px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.section-info {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.header-content > .section-info {
+    text-align: left;
+}
+
+.btn-green {
+    width: 180px;
+    height: 55px;
+    margin-top: 35px;
+    background-color: #10c9c3;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.about-us {
+    height: 400px;
+    width: 620px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signature {
+    margin-top: 37px;
+    margin-bottom: 100px;
+}
+
+.section-skills {
+    height: 570px;
+    background-image: url("./img/skills-background.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.myProgress {
+    width: 500px;
+    background-color: #d8d8d8;
+}
+
+.myBar {
+    width: 1%;
+    height: 3px;
+    background-color: #10c9c3;
+}
+
+.section-skills {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.skills-container {
+    margin-left: 100px;
+}
+
+.skills-container > p {
+    margin: 40px 0 20px 0;
+}
+
+
+.statistics {
+    height: 240px;
+    background-color: #10c9c3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.numbers-card {
+    display: flex;
+    color: white;
+    height: 40px;
+}
+
+.numbers-card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+
+.numbers-card-info > h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.numbers-card-info > p {
+    font-size: 12px;
+}
+
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0dee5;
+    padding: 70px 120px;
+}
+
+
+.fancy-content{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+#fancy-img{
+    width: 1170px;
+    margin: 60px 0 100px 0;
+}
+
+.categories-row {
+    width: 1120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.categories-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 255px;
+}
+
+.card-img {
+    margin: 20px 0;
+    height: 40px;
+}
+
+.card-header {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.card-about {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #b1b1b1;
+}
+
+
+.section-slider {
+    height: 500px;
+    background-color: #10c9c3;
+}
+.slider-item{
+    outline: none
+}
+
+.slick-dots li{
+    width: 5px;
+}
+.slick-dots li.slick-active button:before{
+    color: white;
+    font-size: 10px;
+}
+
+.slider-item-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 810px;
+    color: white;
+    margin: 180px auto 0 auto;
+    font-size: 30px;
+    text-align: center;
+}
+.slider-item-content p{
+    font-size: 12px;
+    margin: 35px 0 80px 0;
+}
+
+
+.section-images {
+    width: 100%;
+    margin: 64px 0;
+}
+
+.images-container {
+    width: 1100px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.need-project {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-container {
+    width: 671px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+form {
+
+}
+
+input {
+    border: none;
+    height: 48px;
+    margin: 15px 0;
+    padding: 0 20px;
+}
+
+#input-name,
+#input-email {
+    margin-top: 40px;
+    width: 280px;
+}
+
+.form-row-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#input-title {
+    width: 630px;
+}
+
+#input-comment {
+    width: 630px;
+}
+
+#input-submit {
+    margin: 30px auto;
+}

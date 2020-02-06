@@ -1,0 +1,71 @@
+.contact-page-container{
+    background-color: #f5f5f5;
+    height: 1180px;
+    padding-bottom: 100px;
+}
+.contact-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 90px;
+    line-height: 30px;
+}
+
+
+
+.contact-full-info{
+    width: 350px;
+    margin-top: 40px;
+}
+.contact-full-info>h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.contact-full-info p{
+    margin: 15px 0;
+    font-size: 16px;
+    color: #767676;
+}
+.full-input-submit{
+    margin: 30px 0;
+}
+.contact-us-info{
+    margin-top: 40px;
+}
+.contact-map{
+    background-color: lightslategrey;
+    height: 435px;
+    margin: 0 90px;
+}
+
+
+.contact-page-form{
+    width: 50%;
+}
+
+input{
+    border: none;
+    height: 48px;
+    margin: 15px 0;
+    padding: 0 20px;
+}
+.input-name,
+.input-email{
+    margin-top: 40px;
+    width: 280px;
+}
+.form-row-1{
+    display: flex;
+    justify-content: space-between;
+}
+.input-title{
+    width: 630px;
+}
+.input-comment{
+    border: none;
+    padding: 22px;
+    margin: 15px 0;
+    resize: none;
+}
+.input-submit{
+    margin: 30px auto;
+}
