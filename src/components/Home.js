@@ -41,7 +41,7 @@ class Home extends Component {
         window.addEventListener("scroll",()=>{
             $(document).ready(function(){
                 let currentScrollPosition=$(this).scrollTop();
-                if(currentScrollPosition>700){
+                if(currentScrollPosition>600){
                     i = move(i, 0, 75);
                     x = move(x, 1, 90);
                     z = move(z, 2, 65);

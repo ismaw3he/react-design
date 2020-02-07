@@ -1,4 +1,20 @@
 @media only screen and (max-width: 1000px) {
+    .numbers-card > img {
+        width: 35px;
+    }
+    .project-view-about {
+        padding-left: 30px;
+    }
+    .project-view-content {
+        height: 400px;
+    }
+    .project-view-buttons {
+        height: 65px;
+    }
+    .contact-us-info > p {
+        margin: 15px 0;
+        font-size: 14px;
+    }
     .header-content {
         width: 470px;
         margin-top: 70px;
@@ -254,6 +270,37 @@
 }
 
 @media only screen and (max-width: 700px) {
+    .project-view-content {
+        flex-direction: column;
+        height: 445px;
+    }
+    .project-view-image {
+        width: 50%;
+    }
+    .project-view-buttons {
+        display: flex;
+        height: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 93px;
+    }
+    .prev-btn, .next-btn {
+        width: 200px;
+        height: 20px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        cursor: pointer;
+        margin: 0 100px;
+    }
+    .prev-btn > p, .next-btn > p {
+        margin-top: 0;
+    }
+    .project-view-about>p, .project-view-about>h1 {
+        width: 90%;
+    }
+
     nav {
         padding-top: 20px;
         margin-bottom: 18px;
@@ -451,7 +498,7 @@
     }
 
     .about-us {
-        margin-top: 35px;
+        margin-top: 76px;
         margin-bottom: -35px;
         height: 225px;
         width: 65%;
@@ -544,8 +591,53 @@
         margin-bottom: 0px;
     }
 }
-
+@media only screen and (max-width: 580px){
+    .project-container {
+        width: 85%;
+    }
+    .section-info {
+        margin-top: 13px;
+        font-size: 9px;
+    }
+    .input-name, .input-email {
+        width: 93%;
+    }
+    form {
+        width: 100%;
+    }
+    .form-row-1 {
+        flex-direction: column;
+    }
+    #input-name, #input-email {
+        margin-top: 15px;
+        width: 92%;
+        height: 35px;
+        font-size: 10px;
+    }
+    #input-title {
+        width: 92%;
+    }
+    .input-comment {
+        font-size: 10px;
+        height: 80px;
+        margin-bottom: 0px;
+    }
+}
 @media only screen and (max-width: 480px) {
+    .contact-us-info > p {
+        margin: 10px 0;
+        font-size: 8px;
+    }
+    .prev-btn > p, .next-btn > p {
+        font-size: 16px;
+    }
+    .prev-btn > h4, .next-btn > h4 {
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .prev-btn > img, .next-btn > img {
+        width: 10px;
+    }
     #menuToggle
     {
         display: block;
@@ -664,5 +756,145 @@
     {
         transform: none;
     }
+/* TOGGLE****************************************/
+    .logo {
+        width: 26px;
+        height: 17px;
+        margin-left: 25px;
+    }
+    .links {
+        width: 54%;
+        margin-right: 15px;
+    }
+    .section-skills {
+        height: 240px;
+    }
+    .skills-container {
+        margin-left: 5px;
+        margin-top: 5px;
+        width: 200px;
+    }
+    .myProgress {
+        width: 165px;
+    }
+    .statistics {
+        flex-direction: column;
+        height: 200px;
+        align-items: flex-start;
+        padding-left: 10%;
+    }
+    .numbers-card {
+        height: 25px;
+    }
+    .numbers-card > img {
+        width: 25px;
+    }
+    .numbers-card-info {
+        margin-left: 18px;
+    }
+    .images-college > a {
+        width: 100%;
+    }
+    .images-college {
+        margin-top: 0;
+    }
+    .react-fancybox .thumbnail img {
+        max-width: 65%;
+    }
+    .cards-container {
+        flex-direction: column;
+    }
+    .slider-item-content :first-child {
+        font-size: 14px;
+    }
+    .images-container {
+        flex-direction: column;
+        width: 85%;
+        height: 530px;
+        margin: 35px auto;
+    }
+    .images-container > img {
+        width: 120px;
+    }
+    .project-container {
+        width: 85%;
+    }
+    form {
+        width: 100%;
+    }
+    .form-row-1 {
+        flex-direction: column;
+    }
+    #input-name, #input-email {
+        margin-top: 15px;
+        width: 92%;
+        height: 35px;
+        font-size: 10px;
+    }
+    #input-title {
+        width: 92%;
+    }
+    footer {
+        padding: 12px;
+    }
+    .footer-info-container > h3 {
+        font-size: 9px;
+        margin-bottom: 8px;
+    }
+    .footer-info-container > p {
+        font-size: 8px;
+        line-height: 15px;
+    }
+    .footer-info-container > a {
+        margin: 2px 0;
+    }
+    .react-fancybox .thumbnail img {
+        max-width: 80vw;
+        width: 73vw;
+    }
 
+    .about-header {
+        font-size: 14px;
+    }
+    .about-text {
+        font-size: 9px;
+        margin-top: 8px;
+    }
+    .about-me-sign {
+        margin-top: 11px;
+        width: 97px;
+    }
+    .about-me-container {
+        margin-top: -128px;
+        width: 90vw;
+    }
+    .profile-container > p {
+        font-size: 9px;
+    }
+    .images-college {
+        margin-top: 12px;
+    }
+    .contact-full-info > h1 {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    .contact-full-info p {
+        margin: 4px 0;
+        font-size: 10px;
+    }
+    .input-name, .input-email {
+        font-size: 10px;
+        margin-top: 5px;
+        width: 92%;
+    }
+    .input-title {
+        font-size: 10px;
+        width: 92%;
+    }
+    .contact-map {
+        margin: 0 15px;
+    }
+    .contact-page-container {
+        height: 940px;
+    }
 }
