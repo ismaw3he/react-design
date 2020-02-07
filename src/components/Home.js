@@ -6,13 +6,13 @@ import $ from "jquery";
 import {Link} from "react-router-dom";
 
 
-
 class Home extends Component {
     state = {
         loading: true,
         data: null,
         pictures: []
     };
+
     async componentDidMount() {
         let i = 0;
         let x = 0;
@@ -27,6 +27,7 @@ class Home extends Component {
                 let id = setInterval(frame, 10);
 
                 function frame() {
+                    try{
                     if (width >= percent) {
                         clearInterval(id);
                         num = 0;
@@ -34,33 +35,39 @@ class Home extends Component {
                         width++;
                         elements[elem].style.width = width + "%";
                     }
+                    }
+                    catch (e) {
+                        clearInterval(id);
+                        num = 0;
+                    }
                 }
             }
             return num;
         }
-        window.addEventListener("scroll",()=>{
-            $(document).ready(function(){
-                let currentScrollPosition=$(this).scrollTop();
-                if(currentScrollPosition>600){
+
+        window.addEventListener("scroll", () => {
+            $(document).ready(function () {
+                let currentScrollPosition = $(this).scrollTop();
+                if (currentScrollPosition > 600) {
                     i = move(i, 0, 75);
                     x = move(x, 1, 90);
                     z = move(z, 2, 65);
-                    console.log(i+x+z);
+                    console.log(i + x + z);
                 }
                 // console.log(currentScrollPosition);
             })
         })
 
-    //    Load images
+        //    Load images
         const url = "./data.json";
 
         const response = await fetch(url);
 
         const info = await response.json();
         const images = [];
-        let counter=0;
+        let counter = 0;
         for (let item of info) {
-            if(counter===8){
+            if (counter === 8) {
                 break;
             }
             counter++;
@@ -106,9 +113,11 @@ class Home extends Component {
                             20 years of combined experience, and know a thing or two
                             about designing websites and mobile apps.
                         </p>
-                        <div className="btn-green">
-                            Contact Us
-                        </div>
+                        <Link to={"/contact"}>
+                            <div className="btn-green">
+                                Contact Us
+                            </div>
+                        </Link>
                     </div>
                 </header>
                 <section className="about-us">
@@ -202,8 +211,6 @@ class Home extends Component {
                 </section>
 
 
-
-
                 <section className="section-fancy">
                     <div className="fancy-content">
                         <h2 className="section-header">Our Work Process</h2>
@@ -288,16 +295,16 @@ class Home extends Component {
                 </section>
 
                 <section className="section-slider">
-                    <Slider  className="single-item" {...settings}>
+                    <Slider className="single-item" {...settings}>
                         <div className="slider-item">
-                                    <div className="slider-item-content">
-                                        <p>“ Outstanding job and exceeded all expectations. It was a pleasure
-                                        to work with them on a sizable first project and am looking
-                                        forward to start the next one asap.”</p>
-                                        <p>
-                                            Michael Hopkins
-                                        </p>
-                                    </div>
+                            <div className="slider-item-content">
+                                <p>“ Outstanding job and exceeded all expectations. It was a pleasure
+                                    to work with them on a sizable first project and am looking
+                                    forward to start the next one asap.”</p>
+                                <p>
+                                    Michael Hopkins
+                                </p>
+                            </div>
                         </div>
                         <div className="slider-item">
                             <div className="slider-item-content">
@@ -349,7 +356,8 @@ class Home extends Component {
                             </div>
 
                             <input type="text" placeholder="Your Title" id="input-title"/>
-                            <textarea name="message" rows="10" cols="85" className="input-comment" placeholder="Your Comment"></textarea>
+                            <textarea name="message" rows="10" cols="85" className="input-comment"
+                                      placeholder="Your Comment"></textarea>
                             <input type="submit" className="btn-green" id="input-submit" value="SEND MESSAGE"/>
                         </form>
                     </div>

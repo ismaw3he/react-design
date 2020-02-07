@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from "react-router-dom";
 
 class About extends Component {
     render() {
@@ -78,7 +79,7 @@ class About extends Component {
                             and see
                             if this could be the start of something beautiful.
                         </p>
-                        <div className="btn-green">LET'S TALK</div>
+                        <Link to={"/contact"}><div className="btn-green">LET'S TALK</div></Link>
                     </div>
                 </section>
             </div>
