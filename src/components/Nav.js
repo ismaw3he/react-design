@@ -6,7 +6,7 @@ class Nav extends Component {
         return (
             <nav>
                 <div className="logo">
-                    <img src="img/logo.png" alt="logo"/>
+                    <img src="http://localhost:3000/img/logo.png" alt="logo"/>
                 </div>
                 <ul className="links">
                     <Link to={"/home"}>

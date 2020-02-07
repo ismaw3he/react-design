@@ -1,0 +1,668 @@
+@media only screen and (max-width: 1000px) {
+    .header-content {
+        width: 470px;
+        margin-top: 70px;
+        margin-right: 35px;
+    }
+
+    .section-header {
+        font-size: 30px;
+        margin-top: 80px;
+    }
+
+    .section-info {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+    .btn-green {
+        width: 165px;
+        height: 50px;
+        margin-top: 30px;
+    }
+
+    .signature {
+        margin-top: 35px;
+        margin-bottom: 60px;
+    }
+
+    .skills-container {
+        margin-left: 35px;
+    }
+
+    .skills-container > p {
+        margin: 35px 0 15px 0;
+    }
+
+    .section-skills {
+        height: 450px;
+    }
+
+    .statistics {
+        height: 200px;
+    }
+
+    .numbers-card {
+        height: 30px;
+    }
+
+    .numbers-card-info {
+        margin-left: 20px;
+    }
+
+    .numbers-card-info > h3 {
+        font-size: 14px;
+    }
+
+    .numbers-card-info > p {
+        font-size: 10px;
+    }
+
+    .images-college > a {
+        width: calc(100% / 2);
+    }
+
+    .main-page-load-more > li {
+        height: 70px;
+        font-size: 12px;
+    }
+
+    #fancy-img {
+        margin: 40px 0 50px 0;
+    }
+
+    .categories-row {
+        margin: 15px 0;
+    }
+
+    .categories-card {
+        width: 200px;
+    }
+
+    .card-img {
+        margin: 9px 0;
+        height: 25px;
+    }
+
+    .card-header {
+        margin: 8px 0;
+        font-size: 12px;
+    }
+
+    .card-about {
+        margin: 9px 0;
+        font-size: 13px;
+    }
+
+    .section-slider {
+        height: 330px;
+    }
+
+    .slick-dots {
+        bottom: 20px;
+    }
+
+    .slider-item-content :first-child {
+        width: 647px;
+        margin: 80px auto 30px auto;
+        font-size: 18px;
+    }
+
+    .slider-item-content p {
+        font-size: 12px;
+        margin: 35px 0 102px 0;
+    }
+
+    .images-container {
+        width: 85%;
+        height: 35px;
+    }
+
+    .images-container > img {
+        width: 90px;
+    }
+
+    .project-container {
+        width: 750px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    #input-name, #input-email {
+        margin-top: 40px;
+        width: 44%;
+    }
+
+    input {
+        border: none;
+        height: 48px;
+        margin: 15px 0;
+        padding: 0 19px;
+    }
+
+    #input-submit {
+        margin: 25px auto;
+    }
+
+    footer {
+        padding: 25px;
+    }
+
+    .footer-info-container > h3 {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .footer-info-container > a {
+        margin: 4px 0;
+    }
+
+    nav {
+        padding-top: 33px;
+        margin-bottom: 30px;
+    }
+
+    .links {
+        margin-right: 50px;
+    }
+
+    .section-profile {
+        height: 300px;
+    }
+
+    .profile-container > h1 {
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+
+    .profile-container > p {
+        font-size: 15px;
+    }
+
+    .section-about-me {
+        height: 420px;
+    }
+
+    .about-header {
+        font-size: 25px;
+    }
+
+    .about-text {
+        margin-top: 18px;
+    }
+
+    .about-me-sign {
+        margin-top: 27px;
+    }
+
+    .about-me-container {
+        margin-top: -110px;
+        width: 455px;
+        margin-right: 8px;
+    }
+
+    .need-project-container {
+        margin: 0 auto 45px auto;
+    }
+
+    .images-college {
+        margin-top: 60px;
+    }
+
+    .contact-row {
+        padding: 45px 35px;
+        line-height: 25px;
+    }
+
+    .contact-full-info > h1 {
+        margin-bottom: 20px;
+        font-size: 23px;
+    }
+
+    .contact-full-info p {
+        margin: 11px 0;
+        font-size: 13px;
+    }
+
+    .contact-page-form {
+        width: 425px;
+    }
+
+    .input-name, .input-email {
+        width: 38%;
+    }
+
+    .input-title {
+        width: 91%;
+    }
+
+    .input-comment {
+        width: 93%;
+        height: 100px;
+    }
+
+    .contact-map {
+        height: 420px;
+        margin: 0 45px;
+    }
+
+    .contact-page-container {
+        background-color: #f5f5f5;
+        height: 990px;
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    nav {
+        padding-top: 20px;
+        margin-bottom: 18px;
+    }
+
+    .logo > img {
+        width: 20px;
+    }
+
+    .links {
+        font-size: 10px;
+        margin-right: 30px;
+    }
+
+    .contact-row {
+        padding: 15px 15px;
+        line-height: 20px;
+    }
+
+    .contact-row {
+        flex-direction: column;
+        padding: 15px 15px;
+        line-height: 20px;
+        align-items: center;
+    }
+
+    .contact-full-info {
+        width: 90%;
+        margin-top: 15px;
+    }
+
+    .contact-us-info {
+        margin-top: 25px;
+    }
+
+    .contact-page-form {
+        width: 90%;
+    }
+
+    .input-name, .input-email {
+        width: 40%;
+    }
+
+    .input-title {
+        width: 93%;
+    }
+
+    .input-comment {
+        width: 94%;
+        height: 100px;
+    }
+
+    .btn-green {
+        width: 130px;
+        height: 40px;
+        margin: 15px auto 20px;
+        font-size: 10px;
+    }
+
+    .contact-map {
+        height: 230px;
+        margin: 0 30px;
+    }
+
+    .contact-page-container {
+        height: 970px;
+        padding-bottom: 2px;
+    }
+
+    .footer-info-container {
+        width: 170px;
+    }
+
+    .footer-info-container > h3 {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .footer-info-container > p {
+        font-size: 10px;
+        margin: 0;
+        line-height: 19px;
+    }
+
+    .footer-info-container > a {
+        font-size: 11px;
+    }
+
+    .projects-page-container {
+        width: 90%;
+    }
+
+    .section-header {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .section-info {
+        margin-top: 13px;
+        font-size: 9px;
+    }
+
+    .images-college {
+        margin-top: 30px;
+    }
+
+    .profile-container > h1 {
+        font-size: 18px;
+        margin-bottom: 22px;
+    }
+
+    .profile-container > p {
+        font-size: 11px;
+    }
+
+    .profile-container {
+        width: 70%;
+    }
+
+    .section-profile {
+        height: 200px;
+    }
+
+    .statistics {
+        height: 120px;
+    }
+
+    .numbers-card {
+        height: 20px;
+    }
+
+    .numbers-card > img {
+        width: 24px;
+    }
+
+    .numbers-card-info {
+        margin-left: 17px;
+    }
+
+    .numbers-card-info > h3 {
+        font-size: 11px;
+    }
+
+    .numbers-card-info > p {
+        font-size: 7px;
+    }
+
+    .section-about-me {
+        height: 320px;
+    }
+
+    .about-me-container {
+        margin-top: -80px;
+        width: 360px;
+    }
+
+    .about-header {
+        font-size: 17px;
+    }
+
+    .about-text {
+        font-size: 11px;
+        margin-top: 10px;
+    }
+
+    .need-project-container {
+        margin: 0 auto;
+        width: 75%;
+    }
+
+    .section-header {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+    .btn-green {
+        width: 110px;
+        height: 28px;
+        margin: 18px auto 17px;
+        font-size: 8px;
+    }
+
+    .header-content {
+        width: 70%;
+        margin: 100px auto;
+    }
+
+    .section-header {
+        text-align: center;
+    }
+
+    .header-content > .section-info {
+        align-content: center;
+        text-align: center;
+    }
+
+    .about-us {
+        margin-top: 35px;
+        margin-bottom: -35px;
+        height: 225px;
+        width: 65%;
+    }
+    .signature {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .section-skills {
+        height: 310px;
+    }
+    .skills-container {
+        margin-left: 35px;
+        margin-top: 45px;
+    }
+    .skills-container > p {
+        margin: 18px 0 10px 0;
+        font-size: 12px;
+    }
+    .myProgress {
+        width: 280px;
+        background-color: #d8d8d8;
+    }
+    .main-page-load-more > li {
+        height: 50px;
+        font-size: 10px;
+    }
+    .fancy-content {
+        width: 80%;
+    }
+    #fancy-img {
+        margin: 30px 0 30px 0;
+    }
+    .react-fancybox .thumbnail img {
+        max-width: 250px;
+    }
+    .cards-container {
+        flex-direction: row;
+    }
+    .categories-row {
+        flex-direction: column;
+    }
+    .categories-card {
+        margin: 20px;
+    }
+    .slider-item-content :first-child {
+        width: 90%;
+        margin: 55px auto 30px auto;
+        font-size: 18px;
+    }
+    .slider-item-content p {
+        font-size: 12px;
+        margin: 68px 0 95px 0;
+    }
+    .images-container {
+        width: 85%;
+        height: 75px;
+    }
+    .images-container > img {
+        width: 65px;
+    }
+    .section-images {
+        margin: 0;
+    }
+    .project-container {
+        margin-bottom: 0;
+    }
+    form {
+        margin: 0 auto;
+        width: 70%;
+    }
+    #input-name, #input-email {
+        margin-top: 34px;
+        width: 37%;
+    }
+    #input-name, #input-email {
+        margin-top: 34px;
+        width: 37%;
+        height: 35px;
+        font-size: 10px;
+    }
+    #input-title {
+        width: 93%;
+        font-size: 10px;
+        height: 35px;
+    }
+    .input-comment {
+        font-size: 10px;
+        height: 80px;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #menuToggle
+    {
+        display: block;
+        position: relative;
+        top: 50px;
+        left: 50px;
+
+        z-index: 1;
+
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #menuToggle a
+    {
+        text-decoration: none;
+        color: #232323;
+
+        transition: color 0.3s ease;
+    }
+
+    #menuToggle a:hover
+    {
+        color: tomato;
+    }
+
+
+    #menuToggle input
+    {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+
+        cursor: pointer;
+
+        opacity: 0; /* hide this */
+        z-index: 2; /* and place it over the hamburger */
+
+        -webkit-touch-callout: none;
+    }
+
+    #menuToggle span
+    {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+
+        background: #cdcdcd;
+        border-radius: 3px;
+
+        z-index: 1;
+
+        transform-origin: 4px 0px;
+
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child
+    {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2)
+    {
+        transform-origin: 0% 100%;
+    }
+
+    #menuToggle input:checked ~ span
+    {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+    }
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+    #menu
+    {
+        position: absolute;
+        width: 300px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+
+        background: #ededed;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    #menu li
+    {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+
+    #menuToggle input:checked ~ ul
+    {
+        transform: none;
+    }
+
+}

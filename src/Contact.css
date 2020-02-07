@@ -39,30 +39,31 @@
 
 
 .contact-page-form{
-    width: 50%;
+    width: 600px;
 }
 
 input{
     border: none;
     height: 48px;
     margin: 15px 0;
-    padding: 0 20px;
+    padding: 0 16px;
 }
 .input-name,
 .input-email{
     margin-top: 40px;
-    width: 280px;
+    width: 42%;
 }
 .form-row-1{
     display: flex;
     justify-content: space-between;
 }
 .input-title{
-    width: 630px;
+    width: 95%;
 }
 .input-comment{
+    width: 95%;
     border: none;
-    padding: 22px;
+    padding: 16px;
     margin: 15px 0;
     resize: none;
 }

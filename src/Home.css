@@ -4,7 +4,7 @@
 
 .header-content {
     width: 480px;
-    margin-top: 40px;
+    margin-top: 180px;
     margin-right: 125px;
 }
 
@@ -14,10 +14,13 @@
     margin-top: 100px;
     text-align: center;
 }
-
+.header-of-main{
+    text-align: left;
+}
 .section-info {
     margin-top: 35px;
     text-align: center;
+    /*width: 620px;*/
 }
 
 .header-content > .section-info {
@@ -123,7 +126,6 @@
     align-items: center;
     justify-content: center;
     background-color: #e0dee5;
-    padding: 70px 120px;
 }
 
 
@@ -137,12 +139,11 @@
     width: 500px;
 }
 #fancy-img{
-    width: 1170px;
     margin: 60px 0 100px 0;
 }
 
 .categories-row {
-    width: 1120px;
+    width: 99%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -197,11 +198,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
+    text-align: center;
+}
+.slider-item-content :first-child{
     width: 810px;
     color: white;
     margin: 180px auto 0 auto;
     font-size: 30px;
-    text-align: center;
 }
 .slider-item-content p{
     font-size: 12px;
@@ -215,7 +219,7 @@
 }
 
 .images-container {
-    width: 1100px;
+    width: 85%;
     height: 70px;
     margin: auto;
     display: flex;
@@ -245,13 +249,13 @@ input {
     border: none;
     height: 48px;
     margin: 15px 0;
-    padding: 0 20px;
+    padding: 0 14px;
 }
 
 #input-name,
 #input-email {
     margin-top: 40px;
-    width: 280px;
+    width: 42%;
 }
 
 .form-row-1 {
@@ -260,13 +264,27 @@ input {
 }
 
 #input-title {
-    width: 630px;
+    width: 95%;
 }
 
 #input-comment {
-    width: 630px;
+ padding: 15px;
+    width: 96%;
 }
 
 #input-submit {
     margin: 30px auto;
+}
+.images-list-main-page{
+    margin: 0;
+}
+.main-page-load-more>li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    color: #8e8e8e;
 }

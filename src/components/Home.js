@@ -2,11 +2,18 @@ import React, {Component} from 'react';
 import ReactFancyBox from 'react-fancybox'
 import 'react-fancybox/lib/fancybox.css'
 import Slider from "react-slick";
+import $ from "jquery";
+import {Link} from "react-router-dom";
 
 
 
 class Home extends Component {
-    componentDidMount() {
+    state = {
+        loading: true,
+        data: null,
+        pictures: []
+    };
+    async componentDidMount() {
         let i = 0;
         let x = 0;
         let z = 0;
@@ -31,11 +38,54 @@ class Home extends Component {
             }
             return num;
         }
+        window.addEventListener("scroll",()=>{
+            $(document).ready(function(){
+                let currentScrollPosition=$(this).scrollTop();
+                if(currentScrollPosition>700){
+                    i = move(i, 0, 75);
+                    x = move(x, 1, 90);
+                    z = move(z, 2, 65);
+                    console.log(i+x+z);
+                }
+                // console.log(currentScrollPosition);
+            })
+        })
 
-        i = move(i, 0, 75);
-        x = move(x, 1, 90);
-        z = move(z, 2, 65);
-        console.log(i+x+z);
+    //    Load images
+        const url = "./data.json";
+
+        const response = await fetch(url);
+
+        const info = await response.json();
+        const images = [];
+        let counter=0;
+        for (let item of info) {
+            if(counter===8){
+                break;
+            }
+            counter++;
+            let sectionStyle = {
+                backgroundImage: `url(${item.img})`,
+                height: "300px",
+                width: "100%",
+                backgroundPosition: "center"
+            };
+            images.push(<Link key={item.id} to={`projects/${item.id}`}>
+                <div
+                    id={item.id}
+                    className="image-single"
+                    style={sectionStyle}
+                >
+                    <img src="./img/eye.png" className="eye" alt="eye"/>
+                </div>
+            </Link>)
+
+        }
+        this.setState({
+            data: info,
+            loading: false,
+            pictures: images
+        });
     }
 
     render() {
@@ -51,7 +101,7 @@ class Home extends Component {
                 <div className="extra-space"></div>
                 <header>
                     <div className="header-content">
-                        <h1 className="section-header">We Design and Develop</h1>
+                        <h1 className="section-header header-of-main">We Design and Develop</h1>
                         <p className="section-info">We are a new design studio based in USA. We have over
                             20 years of combined experience, and know a thing or two
                             about designing websites and mobile apps.
@@ -137,6 +187,23 @@ class Home extends Component {
 
 
                 </section>
+
+
+                <section>
+                    <div className="images-college images-list-main-page">
+                        {this.state.loading ? <div>Loading...</div>
+                            : !this.state.data ? <div>didn't get data</div>
+                                : this.state.pictures
+                        }
+                    </div>
+                    <Link className="main-page-load-more" to={"/projects"}>
+                        <li>LOAD MORE WORK</li>
+                    </Link>
+                </section>
+
+
+
+
                 <section className="section-fancy">
                     <div className="fancy-content">
                         <h2 className="section-header">Our Work Process</h2>
@@ -224,9 +291,9 @@ class Home extends Component {
                     <Slider  className="single-item" {...settings}>
                         <div className="slider-item">
                                     <div className="slider-item-content">
-                                        “ Outstanding job and exceeded all expectations. It was a pleasure
+                                        <p>“ Outstanding job and exceeded all expectations. It was a pleasure
                                         to work with them on a sizable first project and am looking
-                                        forward to start the next one asap.”
+                                        forward to start the next one asap.”</p>
                                         <p>
                                             Michael Hopkins
                                         </p>
@@ -234,9 +301,9 @@ class Home extends Component {
                         </div>
                         <div className="slider-item">
                             <div className="slider-item-content">
-                                “ Outstanding job and exceeded all expectations. It was a pleasure
-                                to work with them on a sizable first project and am looking
-                                forward to start the next one asap.”
+                                <p>“ Outstanding job and exceeded all expectations. It was a pleasure
+                                    to work with them on a sizable first project and am looking
+                                    forward to start the next one asap.”</p>
                                 <p>
                                     Michael Hopkins
                                 </p>
@@ -244,9 +311,9 @@ class Home extends Component {
                         </div>
                         <div className="slider-item">
                             <div className="slider-item-content">
-                                “ Outstanding job and exceeded all expectations. It was a pleasure
-                                to work with them on a sizable first project and am looking
-                                forward to start the next one asap.”
+                                <p>“ Outstanding job and exceeded all expectations. It was a pleasure
+                                    to work with them on a sizable first project and am looking
+                                    forward to start the next one asap.”</p>
                                 <p>
                                     Michael Hopkins
                                 </p>
